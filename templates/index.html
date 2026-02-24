@@ -1,0 +1,254 @@
+{% extends "./base.html" %}
+
+{% block title %}Bosh sahifa{% endblock %}
+
+{% block body %}
+<!-- Hero Bo'limi -->
+    <section id="home" class="pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden relative">
+        <!-- Background bezaklari -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-100 blur-3xl opacity-50 -z-10"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-orange-100 blur-3xl opacity-50 -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Matn qismi -->
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-primary text-sm font-semibold mb-6 border border-blue-100">
+                        <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                        24/7 Aloqadamiz
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark leading-tight mb-6">
+                        Orzuingizdagi <span class="text-primary">avtomobilni</span> toping yoki tezda soting
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Auto24 – ishonchli avtosalon. Bizda yangi va minilgan avtomobillarning keng tanlovi, xavfsiz oldi-sotdi jarayoni va kuningizning istalgan qismida yordamga keladigan 24/7 texnik xizmat mavjud.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#catalog" class="flex justify-center items-center gap-2 bg-primary hover:bg-blue-800 text-white px-8 py-3.5 rounded-xl font-semibold transition-all shadow-lg shadow-blue-500/30">
+                            Mashina qidirish
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#services" class="flex justify-center items-center gap-2 bg-white hover:bg-slate-50 text-dark border border-slate-200 px-8 py-3.5 rounded-xl font-semibold transition-all">
+                            Xizmatlarni ko'rish
+                        </a>
+                    </div>
+                    
+                    <!-- Statistika -->
+                    <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-slate-200">
+                        <div>
+                            <div class="text-2xl font-bold text-dark">500+</div>
+                            <div class="text-sm text-slate-500">Sotuvdagi mashinalar</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-dark">24/7</div>
+                            <div class="text-sm text-slate-500">Texnik yordam</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-dark">10K+</div>
+                            <div class="text-sm text-slate-500">Mamnun mijozlar</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rasm qismi -->
+                <div class="relative hidden lg:block">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-blue-400 rounded-3xl transform rotate-3 opacity-20"></div>
+                    <!-- Tasvir -->
+                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1000&auto=format&fit=crop" 
+                         alt="" 
+                         class="relative rounded-3xl shadow-2xl object-cover h-[600px] w-full transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute bottom-8 -left-8 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+                        <div class="bg-green-100 text-green-600 p-3 rounded-full">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm text-slate-500 font-medium">Kafolatlangan</div>
+                            <div class="font-bold text-dark">100% Xavfsiz</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Asosiy Xizmatlar Bo'limi -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Bizning Asosiy Yo'nalishlarimiz</h2>
+                <p class="text-slate-600 text-lg">Auto24 sizga avtomobil bilan bog'liq barcha muammolarni bir joyda hal qilish imkonini beradi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Xizmat 1: Sotib Olish -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-xl transition-shadow border border-slate-100 group">
+                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shopping-cart" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Mashina Sotib Olish</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Yangi va tekshiruvdan o'tgan minilgan avtomobillarning eng katta bazasi. Sizning byudjetingizga mos eng yaxshi takliflarni taqdim etamiz.
+                    </p>
+                    <a href="#" class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                        Batafsil <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Xizmat 2: Sotish -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-xl transition-shadow border border-slate-100 group">
+                    <div class="w-16 h-16 bg-orange-100 text-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="tag" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Avtomobil Sotish</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Mashinangizni tez va bozor narxida soting. Bepul baholash, hujjatlarni tezkor rasmiylashtirish va pulni darhol to'lash kafolati.
+                    </p>
+                    <a href="#" class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                        Baholatish <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Xizmat 3: Texnik xizmat -->
+                <div class="bg-dark rounded-2xl p-8 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <!-- Background bezak -->
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl transform translate-x-10 -translate-y-10"></div>
+                    
+                    <div class="w-16 h-16 bg-white/10 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform relative z-10">
+                        <i data-lucide="wrench" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 relative z-10">24/7 Texnik Xizmat</h3>
+                    <p class="text-slate-300 mb-6 leading-relaxed relative z-10">
+                        Yo'lda qolib ketmaysiz! Evakuator, sayyor usta, moy almashtirish va ehtiyot qismlarni yetkazib berish xizmatlari kech-u kunduz ishlaydi.
+                    </p>
+                    <a href="tel:+998901234567" class="text-white font-semibold flex items-center gap-2 hover:gap-3 transition-all relative z-10">
+                        Yordam chaqirish <i data-lucide="phone-call" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tanlangan Avtomobillar -->
+    <section id="catalog" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-2">So'nggi Takliflar</h2>
+                    <p class="text-slate-600">Avtosalonimizdagi eng yangi mashinalar</p>
+                </div>
+                <a href="#" class="hidden md:flex text-primary font-semibold items-center gap-2 hover:underline">
+                    Barchasini ko'rish <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mashina 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-slate-100">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800&auto=format&fit=crop" alt="" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full">Yangi</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-dark">Chevrolet Malibu 2</h3>
+                                <p class="text-slate-500 text-sm">2023 yil • Avtomat</p>
+                            </div>
+                            <div class="text-xl font-bold text-primary">$32,500</div>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-sm text-slate-500 flex items-center gap-1"><i data-lucide="gauge" class="w-4 h-4"></i> 0 km</span>
+                            <span class="text-sm text-slate-500 flex items-center gap-1"><i data-lucide="fuel" class="w-4 h-4"></i> Benzin</span>
+                            <button class="bg-slate-100 hover:bg-primary hover:text-white text-dark p-2 rounded-lg transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mashina 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-slate-100">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800&auto=format&fit=crop" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-dark">Hyundai Sonata</h3>
+                                <p class="text-slate-500 text-sm">2021 yil • Avtomat</p>
+                            </div>
+                            <div class="text-xl font-bold text-primary">$26,800</div>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-sm text-slate-500 flex items-center gap-1"><i data-lucide="gauge" class="w-4 h-4"></i> 45,000 km</span>
+                            <span class="text-sm text-slate-500 flex items-center gap-1"><i data-lucide="fuel" class="w-4 h-4"></i> Benzin</span>
+                            <button class="bg-slate-100 hover:bg-primary hover:text-white text-dark p-2 rounded-lg transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mashina 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-slate-100">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=800&auto=format&fit=crop" alt="" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full">Chegirma</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-dark">Kia Sportage</h3>
+                                <p class="text-slate-500 text-sm">2022 yil • Avtomat</p>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400 line-through text-right">$31,000</div>
+                                <div class="text-xl font-bold text-primary">$29,500</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                            <span class="text-sm text-slate-500 flex items-center gap-1"><i data-lucide="gauge" class="w-4 h-4"></i> 12,000 km</span>
+                            <span class="text-sm text-slate-500 flex items-center gap-1"><i data-lucide="fuel" class="w-4 h-4"></i> Benzin</span>
+                            <button class="bg-slate-100 hover:bg-primary hover:text-white text-dark p-2 rounded-lg transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center md:hidden">
+                <a href="#" class="inline-flex text-primary font-semibold items-center gap-2 hover:underline">
+                    Barchasini ko'rish <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aloqa / CTA Bo'limi -->
+    <section id="contact" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary"></div>
+        <!-- Orqa fon naqshlari -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Mashinangizni tezda sotmoqchimisiz yoki yordam kerakmi?</h2>
+            <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
+                Hoziroq biz bilan bog'laning. Operatorlarimiz sizga 24/7 rejimida xizmat ko'rsatishga tayyor. O'z raqamingizni qoldiring va biz sizga qayta aloqaga chiqamiz.
+            </p>
+            
+            <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
+                <input type="tel" placeholder="+998 (__) ___-__-__" class="flex-1 px-6 py-4 rounded-xl text-dark focus:outline-none focus:ring-4 focus:ring-blue-400/50 font-medium">
+                <button type="button" class="bg-secondary hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold transition-colors shadow-lg shadow-orange-500/30 whitespace-nowrap">
+                    Qo'ng'iroq qilish
+                </button>
+            </form>
+            <p class="mt-6 text-blue-200 text-sm flex justify-center items-center gap-2">
+                <i data-lucide="shield" class="w-4 h-4"></i>
+                Sizning ma'lumotlaringiz xavfsizligi kafolatlangan
+            </p>
+        </div>
+    </section>
+{% endblock %}

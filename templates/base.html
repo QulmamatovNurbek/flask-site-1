@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Plus Jakarta Sans shriftini ulash -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS ulash -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind sozlamalari -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1E40AF', // To'q ko'k
+                        secondary: '#F59E0B', // Apelsin rang (aksent uchun)
+                        dark: '#0F172A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide ikonkalari -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Silliq o'tishlar uchun */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar (Yuqori menyu) -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="bg-primary text-white p-2 rounded-lg">
+                        <i data-lucide="car-front" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-dark">Auto<span class="text-primary">24</span></span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="/" class="text-slate-600 hover:text-primary font-medium transition-colors">Bosh sahifa</a>
+                    <a href="/about" class="text-slate-600 hover:text-primary font-medium transition-colors">Biz haqimizda</a>
+                    <a href="/contact" class="text-slate-600 hover:text-primary font-medium transition-colors">Bog'lanish</a>
+                    <a href="/register" class="text-slate-600 hover:text-primary font-medium transition-colors">Ro'yxatdan o'tish</a>
+                    <a href="/login" class="text-slate-600 hover:text-primary font-medium transition-colors">Kirish</a>
+                </nav>
+
+                <!-- Call to Action tugmasi -->
+                <div class="hidden md:flex items-center">
+                    <a href="tel:+998901234567" class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-dark px-4 py-2 rounded-full font-semibold transition-colors mr-4">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        1024
+                    </a>
+                    <a href="#contact" class="bg-primary hover:bg-blue-800 text-white px-6 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-blue-500/30">
+                        Bog'lanish
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-dark focus:outline-none">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block body %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="bg-dark text-slate-300 py-12 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-primary text-white p-1.5 rounded-lg">
+                            <i data-lucide="car-front" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-bold text-xl tracking-tight text-white">Auto<span class="text-primary">24</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        O'zbekistondagi eng ishonchli avtomobil oldi-sotdi markazi va 24/7 texnik yordam xizmati.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Menyu</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#home" class="hover:text-primary transition-colors">Bosh sahifa</a></li>
+                        <li><a href="#catalog" class="hover:text-primary transition-colors">Mashina sotib olish</a></li>
+                        <li><a href="#services" class="hover:text-primary transition-colors">Mashina sotish</a></li>
+                        <li><a href="#services" class="hover:text-primary transition-colors">Texnik xizmat</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Aloqa</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-slate-400"></i> Toshkent sh., Chilonzor tumani</li>
+                        <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-slate-400"></i> +998 90 123 45 67</li>
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-slate-400"></i> info@auto24.uz</li>
+                        <li class="flex items-center gap-2 text-primary font-medium"><i data-lucide="clock" class="w-4 h-4"></i> 24/7 Xizmat</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Ijtimoiy tarmoqlar</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary text-white transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary text-white transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary text-white transition-colors">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>&copy; 2026 Auto24. Barcha huquqlar himoyalangan.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors">Maxfiylik siyosati</a>
+                    <a href="#" class="hover:text-white transition-colors">Foydalanish shartlari</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide ikonkalarni ishga tushirish -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

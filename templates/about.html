@@ -1,0 +1,142 @@
+{% extends "./base.html" %}
+
+{% block body %}
+ <section class="pt-32 pb-16 md:pt-40 md:pb-20 bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary/20"></div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-500 blur-3xl opacity-20"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-sm font-semibold mb-6 border border-white/20 backdrop-blur-sm">
+                <i data-lucide="info" class="w-4 h-4"></i>
+                Kompaniya haqida
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                Auto24 – Yo'llardagi ishonchli <span class="text-secondary">hamrohingiz</span>
+            </h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Biz shunchaki avtomobil sotmaymiz, biz sizning xavfsizligingiz, qulayligingiz va xotirjamligingizni ta'minlaymiz. 10 yillik tajribamiz bilan O'zbekiston bozorida yetakchilardanmiz.
+            </p>
+        </div>
+    </section>
+
+    <!-- Hikoyamiz va Missiyamiz -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Rasm qismi -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-orange-400 to-yellow-300 rounded-3xl transform -rotate-3 opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=1000&auto=format&fit=crop" 
+                         alt="" 
+                         class="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                    
+                    <div class="absolute -bottom-6 -right-6 bg-dark p-6 rounded-2xl shadow-xl text-white hidden md:block">
+                        <div class="text-4xl font-extrabold text-secondary mb-1">10+</div>
+                        <div class="text-sm text-slate-300">Yillik mukammal<br>tajriba</div>
+                    </div>
+                </div>
+
+                <!-- Matn qismi -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">Bizning hikoyamiz qanday boshlangan?</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-lg">
+                        Auto24 loyihasi dastlab kichik bir avtosalon sifatida o'z faoliyatini boshlagan. Bizning asosiy maqsadimiz odamlarga avtomobil xarid qilish jarayonini imkon qadar shaffof, oson va ishonchli qilish edi. 
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed text-lg">
+                        Bugungi kunda biz minglab mijozlarga xizmat ko'rsatadigan, o'zining 24/7 texnik yordam bazasiga ega bo'lgan va mamlakat bo'ylab avtomobil oldi-sotdisida yetakchi o'rinlarni egallaydigan yirik markazga aylandik.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 text-primary rounded-xl flex items-center justify-center">
+                                <i data-lucide="target" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg mb-1">Missiyamiz</h4>
+                                <p class="text-slate-500 text-sm">Mijozlarimizga eng yuqori sifatli xizmat ko'rsatish.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-orange-100 text-secondary rounded-xl flex items-center justify-center">
+                                <i data-lucide="eye" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg mb-1">Nigohimiz</h4>
+                                <p class="text-slate-500 text-sm">Kelajak transport xizmatlarining innovatsion markazi bo'lish.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistika Bo'limi -->
+    <section class="py-16 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-extrabold text-primary mb-2">10K+</div>
+                    <div class="text-slate-600 font-medium">Sotilgan avtomobillar</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-extrabold text-primary mb-2">15K+</div>
+                    <div class="text-slate-600 font-medium">Mamnun mijozlar</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-extrabold text-primary mb-2">150+</div>
+                    <div class="text-slate-600 font-medium">Malakali mutaxassislar</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl md:text-5xl font-extrabold text-primary mb-2">24/7</div>
+                    <div class="text-slate-600 font-medium">Uzluksiz xizmat</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qadriyatlarimiz -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Nima uchun aynan Auto24?</h2>
+                <p class="text-slate-600 text-lg">Biz o'z ishimizga qanday yondashamiz va nega bizga ishonish mumkinligining asosiy sabablari.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Qadriyat 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-xl transition-all border border-slate-100 hover:-translate-y-2 text-center group">
+                    <div class="w-20 h-20 mx-auto bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">100% Ishonchlilik</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Barcha avtomobillarimiz to'liq texnik va yuridik tekshiruvdan o'tkaziladi. Yashirin nuqsonlar yoki hujjat muammolari bo'lmasligiga kafolat beramiz.
+                    </p>
+                </div>
+
+                <!-- Qadriyat 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-xl transition-all border border-slate-100 hover:-translate-y-2 text-center group">
+                    <div class="w-20 h-20 mx-auto bg-orange-100 text-secondary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="clock" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Tezkorlik va Qulaylik</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Hujjatlarni rasmiylashtirish bor-yo'g'i 30 daqiqa vaqt oladi. Mashina sotib olish yoki sotish jarayonini maksimal darajada soddalashtirganmiz.
+                    </p>
+                </div>
+
+                <!-- Qadriyat 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-xl transition-all border border-slate-100 hover:-translate-y-2 text-center group">
+                    <div class="w-20 h-20 mx-auto bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="users" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Mijozlarga e'tibor</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Har bir mijoz biz uchun qadrli. Xariddan so'ng ham sizni yolg'iz qoldirmaymiz. 24/7 xizmat ko'rsatish markazimiz doim siz bilan aloqada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
