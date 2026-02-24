@@ -26,5 +26,6 @@ def contact():
 def cards():
     return render_template("cards.html")
 
-app.run(debug=True)
+# app.run(debug=True)
+
 
